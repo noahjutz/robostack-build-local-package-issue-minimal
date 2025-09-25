@@ -10,3 +10,4 @@ preview = ["pixi-build"]
 
 [dependencies]
 ros-humble-ros2run = ">=0.18.12,<0.19"
+my_dep_pkg = { path = "src/my_dep_pkg" }
