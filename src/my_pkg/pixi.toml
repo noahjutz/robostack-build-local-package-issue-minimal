@@ -11,3 +11,6 @@ version = "*"
 
 [package.build.config]
 distro = "humble"
+
+[package.host-dependencies]
+my_dep_pkg = { path = "../my_dep_pkg" }
