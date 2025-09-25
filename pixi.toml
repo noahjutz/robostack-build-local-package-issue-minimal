@@ -1,0 +1,12 @@
+[workspace]
+authors = ["Noah Jutz <noah@noahjutz.com>"]
+channels = ["conda-forge", "robostack-humble"]
+name = "4_local_packages"
+platforms = ["linux-64"]
+version = "0.1.0"
+preview = ["pixi-build"]
+
+[tasks]
+
+[dependencies]
+ros-humble-ros2run = ">=0.18.12,<0.19"
