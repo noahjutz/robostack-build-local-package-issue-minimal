@@ -1,6 +1,3 @@
-[package]
-name = "my_dep_pkg"
-
 [package.build.backend]
 channels = [
   "https://prefix.dev/pixi-build-backends",

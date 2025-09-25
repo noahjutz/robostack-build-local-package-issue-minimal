@@ -171,6 +171,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/yaml-cpp-0.8.0-h3f2d84a_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-3.23.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.7-hb8e6e7a_2.conda
+      - conda: src/my_dep_pkg
 packages:
 - conda: https://conda.anaconda.org/conda-forge/linux-64/_libgcc_mutex-0.1-conda_forge.tar.bz2
   sha256: fe51de6107f9edc7aa4f786a70f4a883943bc9d39b3bb7307c04c41410990726
@@ -1642,6 +1643,24 @@ packages:
   license: BSD-3-Clause
   size: 174780
   timestamp: 1753310598768
+- conda: src/my_dep_pkg
+  name: ros-humble-my-dep-pkg
+  version: 0.0.0
+  build: hbf21a9e_0
+  subdir: linux-64
+  depends:
+  - libgcc >=15
+  - libgcc >=15
+  - libstdcxx >=15
+  - python_abi 3.11.* *_cp311
+  - numpy >=1.26.4,<2.0a0
+  input:
+    hash: 4f664eec8ef4b47c6a2af9c2e157e6f05f84fd984a14347dd7a9a8e1bb4894cf
+    globs:
+    - CMakeLists.txt
+    - package.xml
+    - setup.cfg
+    - setup.py
 - conda: https://conda.anaconda.org/robostack-humble/linux-64/ros-humble-python-cmake-module-0.10.0-np126py311hbc2a38a_13.conda
   sha256: 82183ca2a9bf24dab1889f2ca136bffc2463435c46c26548925ff1a1b3861d4a
   md5: 4061bfeff2c08662e0f26000a9c56f65
