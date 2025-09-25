@@ -11,3 +11,12 @@ distro = "humble"
 extra-package-mappings = [
 	{ file = "./mapping.yaml" }
 ]
+
+[package.host-dependencies]
+ros-humble-my-dep-pkg = { path = "../my_dep_pkg" }
+
+[package.build-dependencies]
+ros-humble-my-dep-pkg = { path = "../my_dep_pkg" }
+
+[package.run-dependencies]
+ros-humble-my-dep-pkg = { path = "../my_dep_pkg" }
