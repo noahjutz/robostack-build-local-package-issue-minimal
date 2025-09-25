@@ -11,3 +11,6 @@ version = "*"
 
 [package.build.config]
 distro = "humble"
+extra-package-mappings = [
+	{ mapping.localpackages.my_dep_pkg = ["ros-humble-my-dep-pkg"] }
+]
