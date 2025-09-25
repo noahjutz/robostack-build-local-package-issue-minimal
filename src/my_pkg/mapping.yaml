@@ -1,2 +1,2 @@
-mapping:
-  my_dep_pkg: ["ros-humble-my-dep-pkg"]
+my_dep_pkg:
+  ros: ["my_dep_pkg"]
